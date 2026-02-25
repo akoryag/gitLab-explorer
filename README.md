@@ -45,6 +45,7 @@ cd gitlab-explorer
 
 # Устанавливаем зависимости
 go mod init gitLab-explorer
+go get gitlab.com/gitlab-org/api/client-go@v0.160.1
 go mod tidy
 
 # Запуск приложения

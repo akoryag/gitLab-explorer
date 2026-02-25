@@ -167,7 +167,15 @@
   {{end}}
 </div>
   {{end}}
-
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const groups = document.querySelectorAll('[id^="group-ref-"]');
+    groups.forEach(el => {
+      const groupIdx = el.id.replace("group-ref-", "");
+      updateGroupRefsSelect(groupIdx);
+    });
+  });
+  </script>
   <script src="/static/app.js"></script>
 </body>
 </html>
